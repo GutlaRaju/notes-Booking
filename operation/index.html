@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note BOOKING</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Note BOOKING</h1>
+            <div id="auth">
+                <button id="login-btn">Login</button>
+                <button id="register-btn">Register</button>
+                <button id="logout-btn">Logout</button>
+            </div>
+        </header>
+        <main>
+            <div id="note-form">
+                <input type="text" id="note-title" placeholder="Main Title">
+                <textarea id="note-content" placeholder="Take a note..."></textarea>
+                <input type="text" id="note-tags" placeholder="Tags">
+                <input type="date" id="note-reminder">
+                <div id="note-colors">
+                    <button class="color-btn" data-color="#533dde" style="background-color: #533dde;"></button>
+                    <button class="color-btn" data-color="#hsl" style="background-color: hsl(204, 73%, 39%);"></button>
+                </div>
+                <button id="save-note-btn">Save Note</button>
+            </div>
+            <div id="notes-list"></div>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
